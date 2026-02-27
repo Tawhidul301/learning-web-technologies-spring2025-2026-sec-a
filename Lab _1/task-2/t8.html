@@ -2,93 +2,93 @@
 <html>
 <head>
     <title>Person Profile</title>
+    <script src="t1.js"></script>
+    <script src="t2.js"></script>
+    <script src="t3.js"></script>
+    <script src="t4.js"></script>
+    <script src="t4.js"></script>
+    <script src="t6.js"></script>
+    <script src="t7.js"></script>
+    <script src="t8.js"></script>   
 </head>
 <body>
 
-<form>
+<form onsubmit="return validation()">
     <table border="1" width="600" cellpadding="8" cellspacing="0">
 
-        <!-- Title Row -->
         <tr>
             <td colspan="2" align="center">
                 <h2>PERSON PROFILE</h2>
             </td>
         </tr>
 
-        <!-- Name -->
         <tr>
             <td width="30%">Name</td>
             <td>
-                <input type="text" name="name">
+                <input type="text" name="name" id ="name">
             </td>
         </tr>
 
-        <!-- Email -->
         <tr>
             <td>Email</td>
             <td>
-                <input type="text" name="email">
+                <input type="text" name="email" id="email">
             </td>
         </tr>
 
-        <!-- Gender -->
         <tr>
             <td>Gender</td>
             <td>
-                <input type="radio" name="gender" value="male"> Male
-                <input type="radio" name="gender" value="female"> Female
-                <input type="radio" name="gender" value="other"> Other
+                <label><input type="radio" name="gender" value="male" id="male"> Male</label>
+                <label><input type="radio" name="gender" value="female" id="female"> Female</label>
+                <label><input type="radio" name="gender" value="other" id="other"> Other</label>
             </td>
         </tr>
 
-        <!-- Date of Birth -->
         <tr>
             <td>Date of Birth</td>
             <td>
-                <input type="text" size="2" maxlength="2"> /
-                <input type="text" size="2" maxlength="2"> /
-                <input type="text" size="4" maxlength="4">
+                <input type="number" size="2" maxlength="2" min="1" max="31" id="dd"> /
+                <input type="number" size="2" maxlength="2" min="1" max="12" id="mm"> /
+                <input type="number" size="4" maxlength="4" min="1900" max="2026" id="yyyy">
                 <i>(dd/mm/yyyy)</i>
             </td>
         </tr>
 
-        <!-- Blood Group -->
         <tr>
             <td>Blood Group</td>
             <td>
-                <select>
-                    <option>A+</option>
-                    <option>A-</option>
-                    <option>B+</option>
-                    <option>B-</option>
-                    <option>AB+</option>
-                    <option>AB-</option>
-                    <option>O+</option>
-                    <option>O-</option>
+                <select name="bloodGroup" id="bloodGroup">
+                    <option value="">Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
                 </select>
             </td>
         </tr>
 
-        <!-- Degree -->
         <tr>
             <td>Degree</td>
             <td>
-                <input type="checkbox"> SSC
-                <input type="checkbox"> HSC
-                <input type="checkbox"> BSc.
-                <input type="checkbox"> MSc.
+                <input type="checkbox" name="degree" value="ssc" id="ssc"> SSC
+                <input type="checkbox" name="degree" value="hsc" id="hsc"> HSC
+                <input type="checkbox" name="degree" value="bsc" id="bsc"> BSc.
+                <input type="checkbox" name="degree" value="msc" id="msc"> MSc.
             </td>
         </tr>
 
-        <!-- Photo -->
         <tr>
             <td>Photo</td>
             <td>
-                <input type="file">
+                <input type="file" id="photo">
             </td>
         </tr>
 
-        <!-- Buttons -->
         <tr>
             <td colspan="2" align="right">
                 <input type="submit" value="Submit">
@@ -98,6 +98,6 @@
 
     </table>
 </form>
-
+<p id="msg"></p>
 </body>
 </html>

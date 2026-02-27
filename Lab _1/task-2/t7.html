@@ -2,22 +2,23 @@
 <html>
 <head>
     <title>Task 7 - Profile Picture</title>
+    <script src="t7.js"></script>
 </head>
 <body>
-<form>
+<form onsubmit="return validatePhoto()">
     <fieldset>
         <legend>Profile Picture</legend>
         User Id&nbsp;&nbsp;
-        <input type="text"><br><br>
+        <input type="text" id="userId"><br><br>
 
         Picture&nbsp;&nbsp;
-        <input type="file"><br>
+        <input type="file" id="photo"><br>
         <hr style="border: 1px solid black; width: 100%;">
         <br>
         <input type="submit" value="Submit">
     </fieldset>
 
 </form>
-
+<p id="msg"></p>
 </body>
 </html>
