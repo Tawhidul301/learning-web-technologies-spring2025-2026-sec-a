@@ -1,23 +1,28 @@
 <html>
+
 <head>
     <title>Task 4 - Date of Birth</title>
+    <script src="t4.js"></script>
 </head>
+
 <body>
-        <form>
-            <fieldset>
-                <legend>Date of Birth</legend>
-                <h3>
+    <form onsubmit="return validateDOB()">
+        <fieldset>
+            <legend>Date of Birth</legend>
+            <h3>
                 <pre>
- dd     mm     yyyy
+                dd     mm     yyyy
                 </pre>
-                </h3>
-                <input type="text" size="1" maxlength="2"> /
-                <input type="text" name="mm" size="1" maxlength="2"> /
-                <input type="text" name="yyyy" size="2" maxlength="4">
-                <br>
-                <hr style="border: 1px solid black; width: 100%;">
-                <input type="submit" value="Submit">
-            </fieldset>
-        </form>
+            </h3>
+            <input type="number" name="dd" size="1" maxlength="2" id="dd" min="1" max="31"> /
+            <input type="number" name="mm" size="1" maxlength="2" id="mm" min="1" max="12"> /
+            <input type="number" name="yyyy" size="2" maxlength="4" id="yyyy" min="1900" max="2026">
+            <br>
+            <hr style="border: 1px solid black; width: 100%;">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <p id="msg"></p>
 </body>
 </html>
