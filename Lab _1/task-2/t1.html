@@ -1,12 +1,14 @@
 <html>
 <head>
     <title>Task 1 - Name TextField and Button</title>
+    <script src="t1.js"></script>
 </head>
 <body>
     <h3>Name</h3>
-        <form>
-            <input type="text" name="Name"> <br>
-            <input type="submit" value="Submit"><br><br><br><br><br><br><br><br><br>
+        <form onsubmit="return validateName()">
+            <input id="name" type="text" name="Name"> <br>
+            <input type="submit" value="Submit"><br><br>
         </form>
+        <p id="msg"></p>
 </body>
 </html>
