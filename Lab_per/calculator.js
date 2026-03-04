@@ -1,4 +1,3 @@
-
 let calculator = document.getElementById("calculator");
 let display = document.createElement("input");
 display.type = "text";
@@ -7,7 +6,6 @@ calculator.appendChild(display);
 
 calculator.appendChild(document.createElement("br"));
 
-// button list (single array)
 let buttons = [
     "7","8","9","/",
     "4","5","6","*",
@@ -15,7 +13,7 @@ let buttons = [
     "0",".","=","+"
 ];
 
-let count = 0;   // count variable
+let count = 0;   
 
 buttons.forEach(function(val){
 
@@ -46,7 +44,6 @@ buttons.forEach(function(val){
 });
 
 
-// calculate function
 function calculate(){
 
     let expression = display.value;
