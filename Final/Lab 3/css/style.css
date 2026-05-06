@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f0f0f0;
+}
+
+a {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+#logo span.x-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #2ecc40;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 80% 40%, 100% 100%, 50% 70%, 0% 100%, 20% 40%, 0% 20%);
+}
+
+#nav {
+    font-size: 13px;
+}
+
+#nav a {
+    margin-left: 5px;
+}
+
+#content {
+    min-height: 200px;
+    padding: 20px;
+}
+
+#layout {
+    display: flex;
+    min-height: 200px;
+}
+
+#sidebar {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    padding: 15px;
+}
+
+#sidebar h3 {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#sidebar ul {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+#sidebar ul li {
+    margin-bottom: 5px;
+}
+
+#main {
+    flex: 1;
+    padding: 20px;
+}
+
+#footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #555;
+}
+
+fieldset {
+    border: 1px solid #aaa;
+    padding: 15px 20px;
+    display: inline-block;
+    min-width: 320px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 5px;
+}
+
+.form-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.form-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.form-table td {
+    padding: 7px 5px;
+    vertical-align: middle;
+}
+
+.form-table td:first-child {
+    width: 130px;
+    font-size: 13px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="password"],
+.form-table input[type="email"],
+.form-table input[type="date"] {
+    width: 160px;
+    padding: 3px 5px;
+    border: 1px solid #aaa;
+    font-size: 13px;
+}
+
+input[type="submit"],
+input[type="reset"],
+button[type="submit"] {
+    padding: 3px 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.msg-error {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.msg-success {
+    color: green;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.profile-box {
+    border: 1px solid #aaa;
+    padding: 15px;
+    display: inline-block;
+    min-width: 400px;
+    position: relative;
+}
+
+.profile-box legend {
+    font-weight: bold;
+}
+
+.profile-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.profile-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-table td {
+    padding: 6px 5px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.profile-table td:first-child {
+    width: 110px;
+    font-weight: normal;
+    color: #333;
+}
+
+.profile-pic-thumb {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.profile-pic-wrapper {
+    position: relative;
+    float: right;
+    margin-top: -10px;
+}
+
+.label-new-pass {
+    color: green;
+}
+
+.label-retype-pass {
+    color: red;
+}
+
+.gender-group {
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    display: inline-block;
+}
+
+.gender-group legend {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.dob-group {
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    display: inline-block;
+}
+
+.dob-group legend {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.dob-input {
+    width: 40px !important;
+    text-align: center;
+}
+
+.dob-year {
+    width: 60px !important;
+    text-align: center;
+}
+
+.profile-pic-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+}
+
+.remember-row td {
+    padding: 5px;
+    border-bottom: none;
+}
